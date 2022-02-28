@@ -2,7 +2,7 @@
 {
   public interface IRotatable
   {
-    float Angle           { get; set; }
-    float AngularVelocity { get; }
+    int Angle           { get; set; }
+    int AngularVelocity { get; }
   }
 }

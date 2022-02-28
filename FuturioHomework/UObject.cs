@@ -1,35 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Numerics;
+﻿using System.Collections.Generic;
 
 namespace FuturioHomework
 {
   public class UObject
   {
-    public Dictionary<string, object> Values { get; } = new Dictionary<string, object>();
+    Dictionary<string, object> _values { get; } = new Dictionary<string, object>();
 
-    public Vector2 Position
+    public object this[string key]
     {
-      get => (Vector2) Values["Position"];
-      set => Values["Position"] = value;
+      get => _values[key];
+      set => _values[key] = value;
     }
 
-    public float Speed
+    public void Remove(string key)
     {
-      get => (float) Values["Speed"];
-      set => Values["Speed"] = value;
-    }
-
-    public float Angle
-    {
-      get => (float) Values["Angle"];
-      set => Values["Angle"] = value;
-    }
-
-    public float AngularVelocity
-    {
-      get => (float) Values["AngularVelocity"];
-      set => Values["AngularVelocity"] = value;
+      _values.Remove(key);
     }
   }
 }
