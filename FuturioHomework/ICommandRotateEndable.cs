@@ -2,8 +2,7 @@
 {
   public interface ICommandRotateEndable
   {
-    UObject        UObject { get; }
-    ICommand       Command { get; }
-    IQueueCommands Queue   { get; }
+    UObject            UObject { get; }
+    ICommandInjectable Command { get; }
   }
 }

@@ -14,7 +14,7 @@ namespace FuturioHomework
     public void Execute()
     {
       _endable.UObject.Remove(k_Angular);
-      _endable.Queue.Remove(_endable.Command);
+      _endable.Command.Inject(CommandEmpty.Default);
     }
   }
 }

@@ -11,8 +11,8 @@
 
     public void Execute()
     {
-      _endable.UObject.Remove("Speed");
-      _endable.Queue.Remove(_endable.Command);
+      _endable.UObject.Remove(Index.k_Velocity);
+      _endable.Command.Inject(CommandEmpty.Default);
     }
   }
 }

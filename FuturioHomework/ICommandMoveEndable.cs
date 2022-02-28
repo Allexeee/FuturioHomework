@@ -3,7 +3,7 @@
   public interface ICommandMoveEndable
   {
     UObject        UObject { get; }
-    ICommand       Command { get; }
-    IQueueCommands Queue   { get; }
+    ICommandInjectable       Command { get; }
+    // IQueueCommands Queue   { get; }
   }
 }
