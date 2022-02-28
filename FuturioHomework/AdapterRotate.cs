@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+﻿using static FuturioHomework.Index;
 
 namespace FuturioHomework
 {
@@ -10,13 +10,13 @@ namespace FuturioHomework
     {
       _uObject = uObject;
     }
-    
-    public float Angle
+
+    public int Angle
     {
-      get => _uObject.Angle;
-      set => _uObject.Angle = value;
+      get => (int) _uObject[k_Angle];
+      set => _uObject[k_Angle] = value;
     }
 
-    public float AngularVelocity => _uObject.AngularVelocity;
+    public int AngularVelocity => (int) _uObject[k_Angular];
   }
 }
